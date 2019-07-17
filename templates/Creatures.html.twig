@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="banniere">
+        <div class="navbar">
+            <ul>
+                <a href="#"><li>Home</li></a>
+                <a href="#creatures"><li>Créatures</li></a>
+                <a href="#"><li>Contact</li></a>
+            </ul>
+        </div>
+        <h1>Wild Circus</h1>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis leo in nisi cursus elementum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis leo in nisi cursus elementum.
+    </p>
+    <h2 id="creatures">Our Creatures</h2>
+    {% for creature in creatures %}
+        <ul class="background">
+            <li>{{ creature.name }}</li>
+            <li>{{ creature.power }}</li>
+            <li>{{ creature.image }}</li>
+        </ul>
+    {% endfor %}
+    <img src="{{ asset('img/ahs5.jpg') }}"/>
+
+{% endblock %}
+

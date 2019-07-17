@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Butcherman|Eater|Fredericka+the+Great|Stardos+Stencil&display=swap');
+
+/**
+
+    font-family: 'Butcherman', cursive;
+
+    font-family: 'Allerta Stencil', sans-serif;
+
+    font-family: 'Fredericka the Great', cursive;
+
+    font-family: 'Stardos Stencil', cursive;
+
+    font-family: 'Eater', cursive;
+
+ **/
+
+.banniere {
+    background-image: url("../../public/img/ahs0.jpg");
+    height: 27em;
+    width: 100%;
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+
+.navbar {
+    text-align: center;
+    list-style: none;
+    padding-top: 1em;
+
+}
+
+.navbar a{
+    text-decoration-style: -moz-none;
+    list-style: none;
+    color: white;
+
+    font-size: 1em;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h3, p, li{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 5em;
+    color: white;
+    font-family: 'Eater', cursive;
+}
+
+h2{
+    font-size: 3em;
+    color: #cc4e26;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+ul{
+    text-align: center;
+    list-style: none;
+    justify-content: space-around;
+}
+
+img{
+    width: 100%;
+}

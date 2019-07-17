@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block head %}
+            {% block stylesheets %}
+                {{ encore_entry_link_tags('app') }}
+            {% endblock %}
+
+            <title>Wild Circus</title>
+        {% endblock %}
+    </head>
+    <body>
+        <div id="content">
+            {% block content %} {% endblock content%}
+        </div>
+        <div id="footer">
+            {% block footer %} {% endblock %}
+        </div>
+    </body>
+</html>
