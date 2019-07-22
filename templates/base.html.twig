@@ -3,6 +3,7 @@
     <head>
         {% block head %}
             {% block stylesheets %}
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
                 {{ encore_entry_link_tags('app') }}
             {% endblock %}
 
@@ -12,7 +13,7 @@
     <body>
         <div id="content">
             <div class="banniere">
-                <div class="navbar">
+                <div class="navbar_perso">
                     <ul>
                         <a href="/"><li>Home</li></a>
                         <a href="/creatures"><li>Créatures</li></a>

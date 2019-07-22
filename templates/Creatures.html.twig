@@ -10,6 +10,9 @@
             was attached to the most prestigious circus, Ringling Brothers,
             Barnum and Bailey, known as the “big one”. It was a symbol of
             the peak of the practice and its acceptance in American society.
+        </p>
+        <img src="{{ asset('img/ahs8.jpg') }}" class="img-fluid col-sm-12 col-lg-6"/>
+        <p>
             It was at this time that single human oddities started joining
             traveling circuses during the early 1800s, but these shows
             weren’t organized into anything like the sideshows we know until
@@ -19,11 +22,12 @@
         </p>
         <h2>Our Last Captures</h2>
         {% for creature in creatures %}
-            <ul>
-                <li>{{ creature.name }}</li>
-                <li>{{ creature.power }}</li>
-                <li>{{ creature.image }}</li>
-            </ul>
+            <span>Name :</span>
+            <h3>{{ creature.name }}</h3>
+            <span>Power : </span>
+            <h4>{{ creature.power }}</h4>
+            <img src="{{ asset('img/ahs11.jpg') }}" class="col-sm-11 col-md-4 col-lg-3"/>
+            <div class="linea_creas"></div>
         {% endfor %}
     </div>
 {% endblock %}
