@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock title %}
+
+{% block body %}
+    <div class="resume">
+        <h2>
+            Contact
+        </h2>
+        <div class="linea"></div>
+    {% block form %}
+        {{ form(buidler) }}
+    {% endblock %}
+    </div>
+{% endblock %}

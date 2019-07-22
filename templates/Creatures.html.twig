@@ -1,28 +1,30 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
-    <div class="banniere">
-        <div class="navbar">
+    <div class="resume">
+        <h2 id="creatures">Creatures</h2>
+        <div class="linea"></div>
+        <p>
+            In the circus world, freak shows, also called sideshows,
+            were an essential part of the circus. The largest sideshow
+            was attached to the most prestigious circus, Ringling Brothers,
+            Barnum and Bailey, known as the “big one”. It was a symbol of
+            the peak of the practice and its acceptance in American society.
+            It was at this time that single human oddities started joining
+            traveling circuses during the early 1800s, but these shows
+            weren’t organized into anything like the sideshows we know until
+            the midcentury. During the 1870s it was common to see most
+            circuses having freak shows, eventually making the circus a
+            major place for the display of human oddities.
+        </p>
+        <h2>Our Last Captures</h2>
+        {% for creature in creatures %}
             <ul>
-                <a href="#"><li>Home</li></a>
-                <a href="#creatures"><li>Créatures</li></a>
-                <a href="#"><li>Contact</li></a>
+                <li>{{ creature.name }}</li>
+                <li>{{ creature.power }}</li>
+                <li>{{ creature.image }}</li>
             </ul>
-        </div>
-        <h1>Wild Circus</h1>
+        {% endfor %}
     </div>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis leo in nisi cursus elementum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis leo in nisi cursus elementum.
-    </p>
-    <h2 id="creatures">Our Creatures</h2>
-    {% for creature in creatures %}
-        <ul class="background">
-            <li>{{ creature.name }}</li>
-            <li>{{ creature.power }}</li>
-            <li>{{ creature.image }}</li>
-        </ul>
-    {% endfor %}
-    <img src="{{ asset('img/ahs5.jpg') }}"/>
-
 {% endblock %}
 

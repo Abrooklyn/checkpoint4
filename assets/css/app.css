@@ -16,11 +16,10 @@
  **/
 
 .banniere {
-    background-image: url("../../public/img/ahs0.jpg");
+    background-image: url("../../public/img/banniere3.jpg");
     height: 27em;
     width: 100%;
     background-size: cover;
-    background-repeat: repeat-x;
 }
 
 .navbar {

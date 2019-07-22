@@ -11,8 +11,18 @@
     </head>
     <body>
         <div id="content">
-            {% block content %} {% endblock content%}
+            <div class="banniere">
+                <div class="navbar">
+                    <ul>
+                        <a href="/"><li>Home</li></a>
+                        <a href="/creatures"><li>Créatures</li></a>
+                        <a href="/contact"><li>Contact</li></a>
+                    </ul>
+                </div>
+                <h1>Wild Circus</h1>
+            </div>
         </div>
+            {% block content %} {% endblock content%}
         <div id="footer">
             {% block footer %} {% endblock %}
         </div>

@@ -14,15 +14,15 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
-class CreaturesController extends AbstractController
+class HomeController extends AbstractController
 {
     /**
-     * @Route("/creatures", name="creatures")
+     * @Route("/", name="home")
      */
-    public function index(CreatureRepository $creaturesRepository): Response
+    public function index(): Response
     {
-        return $this->render('creatures.html.twig', [
-            'creatures' => $creaturesRepository->findAll()
+        return $this->render('home.html.twig', [
+
         ]);
     }
 }
