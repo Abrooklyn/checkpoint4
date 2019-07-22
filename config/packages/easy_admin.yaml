@@ -5,7 +5,7 @@ easy_admin:
         display_avatar: false
     entities:
         creatures:
-            class: App\Entity\creature
+            class: App\Entity\Creature
             list:
                 fields:
                     - { property: 'name', label: 'Nom' }

@@ -3,4 +3,4 @@ vich_uploader:
     mappings:
             creatures_images:
                 uri_prefix:         '%app.path.creature_images%'
-                upload_destination: '%kernel.project_dir%/public/upload/%app.path.creature_images%'
+                upload_destination: '%kernel.project_dir%/public/%app.path.creature_images%'
